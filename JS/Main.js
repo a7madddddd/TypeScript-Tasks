@@ -75,3 +75,34 @@ for (var i_3 = 0; i_3 < primeArray.length; i_3++) {
         console.log(primeArray[i_3]);
     }
 }
+var person = {
+    name: "ahmad",
+    age: 24
+};
+if (person.age < 18) {
+    console.log("person is : Minor");
+}
+else {
+    console.log("person is : Adult");
+}
+var teacher = {
+    name: "Ahmad",
+    subject: ["Math", "English"]
+};
+console.log(teacher.subject);
+var product = [
+    { name: 'Product A', price: 100, quantity: 6 },
+    { name: 'Product B', price: 150, quantity: 4 },
+    { name: 'Product C', price: 200, quantity: 10 },
+    { name: 'Product D', price: 50, quantity: 3 },
+];
+function UpdeteProductsPrice(product) {
+    for (var i = 0; i < product.length; i++) {
+        for (var i_4 = 0; i_4 < 3; i_4++) {
+            if (product[i_4].quantity > 5) {
+                var Newprice = product[i_4].price * 1.10;
+            }
+        }
+    }
+    console.log(product);
+}
